@@ -1,0 +1,89 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid{
+  font-family: 'Ephesis', cursive;
+  font-size: 1.5rem;
+  display: grid;
+  color: #422D06;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 350px;
+}
+
+.grid-cell{
+ display: flex;
+}
+
+.grid-cell p{
+  padding: 10px;
+  align-self: center;
+}
+
+.grid-cell p > span{
+  display: block;
+  text-align: right;
+}
+
+.grid-cell:first-child{
+  background: radial-gradient(#ffffff,#D9A404);
+}
+
+.grid-cell:first-child p {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.grid-cell:nth-child(2){
+  background-image: url("images/road.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.grid-cell:nth-child(3){
+  background: radial-gradient(#ffffff, #F28705);
+}
+
+.grid-cell:nth-child(4){
+  background-image: url("images/pumpkin-and-coffee.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.grid-cell:nth-child(5){
+  background: radial-gradient(#ffffff, #733702) ;
+}
+.grid-cell:nth-child(6){
+  background: radial-gradient(#ffffff, #D95204);
+}
+
+.grid-cell:nth-child(7){
+  background-image: url("images/fallen-leaves.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-cell:nth-child(8){
+  background: radial-gradient(#ffffff, #731702);
+}
+
+.grid-cell:nth-child(9){
+  background-image: url("images/maple-leaves.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.grid-cell:nth-child(10){
+  background: radial-gradient(#ffffff,#D97B29);
+}
+.grid-cell:nth-child(11){
+  background-image: url("images/candles.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-cell:last-child{
+  background: radial-gradient(#ffffff,#BF9484);
+}
+
