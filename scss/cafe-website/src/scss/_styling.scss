@@ -1,0 +1,13 @@
+%textStyle{
+  writing-mode:  vertical-lr;
+  text-orientation: upright;
+}
+
+%textFlow{
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+

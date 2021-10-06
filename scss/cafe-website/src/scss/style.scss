@@ -1,0 +1,115 @@
+@import "_styling";
+@import "_variables";
+
+body{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: minmax(min-content,35px) 1fr minmax(min-content,35px);
+  grid-template-rows: minmax(min-content,35px) 1fr 1fr minmax(min-content,35px);
+  text-transform: uppercase;
+  margin: 1px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+  grid-column: span 3;
+  grid-row: 1 / 2;
+  border: $borderStyle;
+  display: grid;
+  span{
+    align-self: center;
+    @extend %textFlow;
+  }
+  
+}
+
+div.nav-left {
+  border: $borderStyle;
+  border-top: none;
+  @extend %textStyle;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2 / 3;
+  ul {
+      justify-self: center;
+      align-self:center;
+      display: flex;
+      padding: 0;
+      margin: 5px 5px;
+    li{
+      list-style: none;
+      padding-bottom: 25px;
+      &:nth-child(2), &:last-child{
+        list-style: square;
+      }
+    }
+  }
+}
+
+body > div:nth-child(3){
+  grid-row: 3/4;
+  grid-column: 1/2;
+  @extend %textStyle;
+  border-bottom: none;
+  display: grid;
+  span:first-child{
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    justify-self: center;
+    align-self:center;
+    display: flex;
+    img {
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+    }
+  }
+}
+
+div.nav-right{
+  @extend %textStyle;
+  display: flex;
+  border: $borderStyle;
+  justify-content: center;
+  align-items:center;
+}
+
+div:nth-child(5){
+  border-top: none;
+}
+
+div:nth-child(6){
+  border-top: none;
+  border-bottom: none;
+}
+
+section {
+  grid-column: 2/ 3;
+  grid-row: 2/4;
+  background-image: $left-img, $right-img;
+  background-size: 50%;
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  div.background{
+    grid-row: 2 / 3;
+    color: lavenderblush;
+    font-size: 10em;
+    text-align: center;
+  }
+  
+}
+
+footer{
+  grid-column: span 3;
+  grid-row: 4 / 5;
+  border: $borderStyle;
+  display: grid;
+  span{
+    align-self: center;
+    @extend %textFlow;
+  }
+}
+
