@@ -5,4 +5,5 @@
 - [grid 연습(1)](https://badreligion.tinakim.repl.co/)
 - [grid 연습(2) - 반응형 레이아웃](https://ostrich.tinakim.repl.co/)
 - [grid 연습(3) - 반응형 레이아웃](https://bluprint.tinakim.repl.co/)
-- [전시회 사이트](https://bluprint-1.tinakim.repl.co/)
+- [전시회 소개 웹사이트](https://bluprint-1.tinakim.repl.co/)
+- [Cafe 웹사이트](https://bluprint-2.tinakim.repl.co/)
