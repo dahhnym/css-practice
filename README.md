@@ -1,10 +1,10 @@
 # css-practice
 
 ### check the outputs
-- [flexbox 연습](https://consideratealicebluewatchdog.tinakim.repl.co/)
-- [grid 연습(1)](https://badreligion.tinakim.repl.co/)
-- [grid 연습(2) - 반응형 레이아웃](https://ostrich.tinakim.repl.co/)
-- [grid 연습(3) - 반응형 레이아웃](https://bluprint.tinakim.repl.co/)
-- [전시회 소개 웹사이트](https://bluprint-1.tinakim.repl.co/)
-- [Cafe 웹사이트](https://bluprint-2.tinakim.repl.co/)
-- [포토 갤러리 웹사이트](https://Bluprint-3.tinakim.repl.co)
+- [Paris](https://consideratealicebluewatchdog.tinakim.repl.co/)
+- [some cool layout](https://badreligion.tinakim.repl.co/)
+- [No Time To Die Aesthetic](https://ostrich.tinakim.repl.co/)
+- [Autumn Quotes](https://bluprint.tinakim.repl.co/)
+- [MoMa Exhibition Info](https://bluprint-1.tinakim.repl.co/)
+- [Café](https://bluprint-2.tinakim.repl.co/)
+- [Beautiful Vacation Photo](https://Bluprint-3.tinakim.repl.co)
