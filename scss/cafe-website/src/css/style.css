@@ -61,7 +61,7 @@ body > div:nth-child(3) {
 }
 body > div:nth-child(3) span:first-child {
   writing-mode: vertical-lr;
-  text-orientation: sideways-right;
+  transform: scale(-1);
   justify-self: center;
   align-self: center;
   display: flex;
