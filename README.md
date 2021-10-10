@@ -9,3 +9,4 @@
 - [Café](https://bluprint-2.tinakim.repl.co/)
 - [Beautiful Vacation Photo](https://Bluprint-3.tinakim.repl.co)
 - [2021 Tech Events and Show Guide](https://Bluprint-5.tinakim.repl.co)
+- [Bling Jewelry](https://Bluprint-6.tinakim.repl.co)

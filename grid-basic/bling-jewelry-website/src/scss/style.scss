@@ -1,0 +1,216 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import "_imgUrl";
+@import "mixin";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 18vw 22vw 30vw 30vw;
+  background-color: #EBDACA;
+}
+
+header{
+  grid-column: 1/2;
+  
+  p {
+    margin: 60px 0 30px 15px;
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+  nav {
+    ul{
+      margin-bottom: 8em;
+      border-collapse: collapse;
+      li{
+        border: solid 1px burlywood;
+        border-left: none;
+        border-right: none;
+        font-size: 1.2em;
+        padding: 15px;
+        &:hover{
+          background-color: burlywood;
+          font-weight: 500;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+          width: 16vw;
+          &:hover {
+            font-weight: 500;
+            background-color: burlywood;
+          }
+        }
+      }
+    }
+  }
+  span{
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  div{
+    flex-wrap: wrap;
+    padding-left: 15px;
+    ul{
+      height: 5em;
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-items: center;
+      li {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  a.en, a.kr{
+    text-decoration: none;
+    color: black;
+  }
+
+  a.en {
+    border-right: solid 1px burlywood;
+    padding-right: 8px;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+  a.kr{
+    padding-left: 8px;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+}
+
+li.selected{
+  background-color: burlywood;
+  font-weight: 500;
+}
+
+div.about{
+  border-left: solid 1px burlywood;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  div{
+    padding: 15px;
+    &:first-child{
+      grid-row: 1/span 4;
+      h1{
+        font-size: 2rem;
+        margin-top: 55px;
+        margin-bottom: 30px;
+      }
+      p{
+        line-height: 1.5em;
+      }
+    }
+    &:last-child{
+      border-top: solid 1px burlywood;
+      grid-row: 5/6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      span{
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+div.img-grid{
+  grid-column:3/5;
+  display: grid;
+  @include gridSetup(2,5);
+  div{
+    border: solid 1px #EBDACA;
+    background-size: cover;
+    background-position: center;
+    &:first-child{
+      grid-column:1/2;
+      grid-row:1/span 4;
+      background-image: $mainImg;
+      border-bottom: none;
+    }
+    &:nth-child(2){
+      grid-column:2/3;
+      grid-row:1/3;
+      background-image: $subImg-sq;
+    }
+    &:nth-child(3){
+      grid-column: 2/3;
+      grid-row:3/4;
+      display: grid;
+      @include gridSetup(3,2);
+      div{
+        &:first-child{
+          grid-column: 1/3;
+          grid-row: 1/ span 2;
+          background-image: $subImg-ls-1;
+        }
+        &:nth-child(2){
+          grid-column: 3/4;
+          grid-row: 1/2;
+          background-image: $subSubImg-ls-1;
+        }
+        &:last-child{
+          grid-column: 3/4;
+          grid-row: 2/3;
+          background-image: $subSubImg-ls-2;
+        }
+      }
+    }
+    &:nth-child(4){
+      grid-column: 2/3;
+      grid-row: 4/5;
+      display: grid;
+      div{
+        &:first-child{
+          grid-column: 1/2;
+          grid-row: span 5;
+          background-image: $subImg-ptr-1;
+        }
+        &:last-child{
+          grid-column: 2 / 4;
+          grid-row: span 5;
+          background-image: $subImg-ls-2;
+        }
+      }
+    }
+    &:last-child{
+      grid-column: span 2;
+      grid-row:5/6;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      div:first-child{
+        grid-column: 1/2;
+        grid-row: span 5;
+        display: grid;
+        @include gridSetup(2,2);
+        div:first-child{
+          grid-column: 1/2;
+          background-image: $subSubImg-ptr;
+        }
+        div:nth-child(2){
+          grid-column: 2/3;
+          grid-row: 1/2;
+          background-image: $subSubImg-ls-3;
+        }
+        div:last-child{
+          grid-column:2/3;
+          grid-row: 2/3;
+          background-image: $subSubImg-ls-4;
+        }
+      }
+      div:last-child{
+        grid-column:2/4;
+        grid-row: span 5;
+        background-image: $subImg-ls-3;
+      }
+    }
+  }
+}
